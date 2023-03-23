@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+    <header>
+        <h1>Página de Spa</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Información.html">Información</a></li>
+            <li><a href="Servicios.html">Nuestros servicios</a></li>
+            <li><a href="pagForm.html">Agenda tu cita</a></li>
+        </ul>
+    </nav>  
+    <form>
+        <fieldset>
+            <legend>Ingrese sus datos para agendar la cita</legend>
+            <label for="txNom">Nombres</label>
+            <input type="text" id="txNom"><br><br>
+            <label for="txApe">Apellidos</label>
+            <input type="text" id="txApe"><br><br>
+            <label for="txEd">Edad</label>
+            <input type="number"><br><br>
+            <label for="txCed">Cédula</label>
+            <input type="text" id="txCed"><br><br>
+            <label for="txSex">Sexo:</label><br>
+            <input type="radio" name="txSex">Femenino<br>
+            <input type="radio" name="txSex">Masculino<br><br>
+            <label for="txCor">Correo electrónico</label>
+            <input type="text" id="txCor"><br><br>
+            <label for="txNum">Número telefonico</label>
+            <input type="tel" id="txNum">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Ubicación y disponibilidad</legend><br>
+                <label for="">Escoja la ubicación con mayor facilidad para usted llegar:</label><br>
+                <label for="ubBar">Barrio</label>
+                    <select name="ubBar">
+                        <optgroup label="Medellín">
+                            <option value="">Laureles</option>
+                            <option value="">Poblado</option>
+                            <option value="">San Antonio</option>
+                        </optgroup>
+                    </select><br><br>
+                <label for="">Escoja el (o los) día que tiene disponibilidad para agendar su cita</label><br>
+                <label for="">Días de la semana</label><br>
+                        <input type="radio" name="DLun">Lunes<br>
+                        <input type="radio" name="DMar">Martes<br>
+                        <input type="radio" name="DMie">Miercoles<br>
+                        <input type="radio" name="DJue">Jueves<br>
+                        <input type="radio" name="DVie">Viernes<br>
+                        <input type="radio" name="DSab">Sabado<br>
+                        <input type="radio" name="DDom">Domingo<br>
+                        <input type="radio" name="tDias">Todos los días<br><br>
+                <label for="">Horario en el que está disponible</label>
+                <select name="hora">
+                    <optgroup label="horario">
+                        <option value="">8 - 10</option>
+                        <option value="">10 - 12</option>
+                        <option value="">12 - 2</option>
+                        <option value="">2 - 4</option>
+                        <option value="">4 - 6</option>
+                        <option value="">6 - 8</option>
+                        <option value="">Cualquier hora</option>
+                    </optgroup>
+                </select><br><br>
+                <label for="txacom">Comentarios:</label><br>
+                    <textarea name="" id="txacom" cols="50" rows="10"></textarea>
+        </fieldset><br>
+        <input type="submit" value="Agendar" id="btnAgen">
+    </form>
+    <footer>
+        Email:aprendeJunior@ajunior &nbsp;&nbsp;&nbsp;
+        &copy; CopyRight - Liliana María García A
+    </footer>
+</div>
+</body>
+</html>
